@@ -504,22 +504,22 @@ const registerTFGGreenhouseRecipes = (event) => {
 
 	// Mars Wood
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/strophar', [
-		'64x ad_astra:strophar_stem', '4x tfg:saplings/strophar', '16x ad_astra:strophar_cap', '16x ad_astra:strophar_cap'
+		'64x ad_astra:strophar_stem', '4x tfg:saplings/strophar', '32x ad_astra:strophar_stem', '16x ad_astra:strophar_cap'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/aeronos', [
-		'64x ad_astra:aeronos_stem', '4x tfg:saplings/aeronos', '16x ad_astra:aeronos_cap', '16x ad_astra:aeronos_cap'
+		'64x ad_astra:aeronos_stem', '4x tfg:saplings/aeronos', '32x ad_astra:aeronos_stem', '16x ad_astra:aeronos_cap'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/glacian', [
-		'64x ad_astra:glacian_log', '4x tfg:saplings/glacian', '16x species:alphacene_moss_block', '16x species:alphacene_moss_block'
+		'64x ad_astra:glacian_log', '4x tfg:saplings/glacian', '32x ad_astra:glacian_log', '16x species:alphacene_moss_block'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/alphacene', [
 		'64x species:alphacene_mushroom_block', '4x tfg:saplings/alphacene', '16x minecraft:mushroom_stem', '16x minecraft:mushroom_stem'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/warped', [
-		'64x beneath:wood/log/warped', '4x tfg:saplings/warped', '16x minecraft:warped_wart_block', '16x minecraft:warped_wart_block'
+		'64x beneath:wood/log/warped', '4x tfg:saplings/warped', '32x beneath:wood/log/warped', '16x minecraft:warped_wart_block'
 	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:mars', '8x tfg:saplings/crimson', [
-		'64x beneath:wood/log/crimson', '4x tfg:saplings/crimson', '16x minecraft:nether_wart_block', '16x minecraft:nether_wart_block'
+		'64x beneath:wood/log/crimson', '4x tfg:saplings/crimson', '32x beneath:wood/log/crimson', '16x minecraft:nether_wart_block'
 	], 1);
 
 	// Mars Plants
@@ -534,10 +534,10 @@ const registerTFGGreenhouseRecipes = (event) => {
 	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:chorus_mushroom_seeds', 'betterend:chorus_mushroom_product', 1);
 	generateCropGreenHouseRecipe(event, 'ad_astra:mars', 'betterend:shadow_berry_seeds', 'betterend:shadow_berry_product', 1);
 
-	// Moon Crops
-	generateCropGreenHouseRecipe(event, 'ad_astra:moon', 'tfg:lunar_chorus_flower', 'minecraft:chorus_fruit', 2);
-
 	// Moon Plants
+	generateGreenHouseRecipe(event, 'ad_astra:moon', '8x tfg:lunar_chorus_flower', [
+		'64x minecraft:chorus_fruit', '8x minecraft:chorus_fruit', '8x tfg:lunar_chorus_flower', '8x tfg:lunar_chorus_flower'
+	], 1);
 	generateGreenHouseRecipe(event, 'ad_astra:moon', '8x minecraft:twisting_vines', [
 		'16x minecraft:twisting_vines', '8x minecraft:pearlescent_froglight', '8x minecraft:verdant_froglight', '8x minecraft:ochre_froglight'
 	], 1);

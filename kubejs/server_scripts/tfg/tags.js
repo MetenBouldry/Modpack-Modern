@@ -4,7 +4,6 @@ const registerTFGItemTags = (event) => {
 
 	registerTFGTrimItemTags(event)
 	registerTFGFacadeWhitelistItemTags(event)
-	registerBlockInteractionItemTags(event)
 	registerTFGStoneItemTags(event)
 	registerTFGFoodItemTags(event);
 	registerTFGMedicineItemTags(event);
@@ -47,6 +46,7 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:empty_dna_syringes', 'tfg:clean_dna_syringe')
 
 	event.add('tfc:sewing_needles', 'tfg:stainless_steel_needle')
+	
 	//#endregion
 
 	// Airplane Upgrades
@@ -82,13 +82,11 @@ const registerTFGItemTags = (event) => {
 	event.add('forge:screws/any_bronze', '#forge:screws/black_bronze')
 	
 	// Steam Bloomery
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "minecraft:charcoal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:rich_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:poor_raw_coal");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:coal_dust");
-    event.add("tfg:steam_bloomery_basic_fuels", "gtceu:charcoal_dust");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:coal");
+    event.add("tfg:bloomery_basic_fuels", "minecraft:charcoal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:rich_raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:raw_coal");
+    event.add("tfg:bloomery_basic_fuels", "gtceu:poor_raw_coal");
 		
 	//#region holder materials
 	event.remove('forge:dusts', 'tfg:nitrocellulose')
@@ -111,6 +109,7 @@ const registerTFGBlockTags = (event) => {
 
 	registerTFGPrimitiveBlockTags(event)
 	registerTFGFoodBlockTags(event)
+	registerTFGStoneBlockTags(event)
 	registerTFGGeneralWorldgenBlockTags(event)
 	registerTFGBeneathBlockTags(event)
 	registerTFGMoonBlockTags(event)
@@ -181,6 +180,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:any_drinkables', 'gtceu:ethanol')
 	event.add('tfc:drinkables', 'gtceu:methanol')
 	event.add('tfc:any_drinkables', 'gtceu:methanol')
+	event.add('tfc:drinkables', 'gtceu:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
+	event.add('tfc:drinkables', 'rnr:concrete')
+	event.add('tfc:any_drinkables', 'gtceu:concrete')
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
